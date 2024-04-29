@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Application.css">
+    <title>GuessNumber</title>
+</head>
+<body>
+    <div>
+        <h1>Угадай число</h1>
+        <p>“Привет, я загадал число от min <span id="min"></span> до max <span id="max"></span> вашего диапазона. Попробуй угадать его за 5 попыток!”.</p>
+    </div>
+
+    <div class="range">
+        <input type="number" id="minNum" placeholder="Введите min число">
+        <input type="number" id="maxNum" placeholder="Введите max число">
+        <button id="setRange">Установить диапазон</button>
+        <p id="error"></p>
+    </div>
+
+    <div class="findNumber">
+        <input type="number" id="user" placeholder="Введите число">
+        <button id="check">Проверить</button>
+        <button id="exit">Выйти</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="Application.js"></script>
+</html>
